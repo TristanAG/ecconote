@@ -2,7 +2,7 @@
   "name": "tangerine-notes",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "http://myname.github.io/myapp",
+  "homepage" : "http://tristanag.github.io/ecconote",
   "dependencies": {
     "moment": "^2.20.1",
     "node-sass-chokidar": "^0.0.3",
@@ -21,6 +21,8 @@
     "build-js": "react-scripts build",
     "build": "npm-run-all build-css build-js",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   }
 }
