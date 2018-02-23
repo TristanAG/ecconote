@@ -64,9 +64,9 @@ class App extends React.Component {
                 <h4>e c c o  n o t e</h4>
                 <h6><i>write notes with #tags</i></h6>
                 <div id="main-nav">
-                  <Link to="/" className="page-link">new</Link>
-                  <Link to="/history" className="page-link">history</Link>
-                  <Link to="/about" className="page-link">about</Link>
+                  <Link to="/ecconote/" className="page-link">new</Link>
+                  <Link to="/ecconote/history" className="page-link">history</Link>
+                  <Link to="/ecconote/about" className="page-link">about</Link>
                 </div>
               </div>
               <div className="container" style={{ marginTop: "15px"}}>
@@ -80,14 +80,14 @@ class App extends React.Component {
                 <div className="row">
                   <div className="columns eight">
                     {/* <NoteForm addHashWord={this.addHashWord} addNote={this.addNote}/> */}
-                    <Route exact path="/" render={() => (
+                    <Route exact path="/ecconote/" render={() => (
                       <NoteForm addHashWord={this.addHashWord} addNote={this.addNote} />
                     )}
                     />
-                    <Route exact path="/history" render={() => (
+                    <Route exact path="/ecconote/history" render={() => (
                       <Note notes={this.state.notes} />
                     )} />
-                    <Route exact path="/about" component={About} />
+                    <Route exact path="/ecconote/about" component={About} />
                   </div>
                   <MediaQuery minWidth={550}>
                     <div className="columns four" id="hashed-word-list-full">
