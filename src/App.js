@@ -80,14 +80,14 @@ class App extends React.Component {
                 <div className="row">
                   <div className="columns eight">
                     {/* <NoteForm addHashWord={this.addHashWord} addNote={this.addNote}/> */}
-                    <Route exact path="/ecconote/" render={() => (
+                    <Route exact path={process.env.PUBLIC_URL + '/'} render={() => (
                       <NoteForm addHashWord={this.addHashWord} addNote={this.addNote} />
                     )}
                     />
-                    <Route exact path="/ecconote/history" render={() => (
+                    <Route exact path={process.env.PUBLIC_URL + '/history'} render={() => (
                       <Note notes={this.state.notes} />
                     )} />
-                    <Route exact path="/ecconote/about" component={About} />
+                    <Route exact path={process.env.PUBLIC_URL + '/about'} component={About} />
                   </div>
                   <MediaQuery minWidth={550}>
                     <div className="columns four" id="hashed-word-list-full">
