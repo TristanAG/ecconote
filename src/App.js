@@ -64,9 +64,9 @@ class App extends React.Component {
                 <h4>e c c o  n o t e</h4>
                 <h6><i>write notes with #tags</i></h6>
                 <div id="main-nav">
-                  <Link to="/ecconote/" className="page-link">new</Link>
-                  <Link to="/ecconote/history" className="page-link">history</Link>
-                  <Link to="/ecconote/about" className="page-link">about</Link>
+                  <Link to="/" className="page-link">new</Link>
+                  <Link to="/history" className="page-link">history</Link>
+                  <Link to="/about" className="page-link">about</Link>
                 </div>
               </div>
               <div className="container" style={{ marginTop: "15px"}}>
