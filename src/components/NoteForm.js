@@ -70,7 +70,7 @@ class NoteForm extends React.Component {
 
   render() {
     if(this.state.toHistory === true){
-      return <Redirect to='/history' />
+      return <Redirect to={process.env.PUBLIC_URL + '/history'} />
     }
 
     return (
